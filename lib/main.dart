@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'user_model.dart'; // Import the UserModel class
-import 'cart_model.dart'; // Import the CartModel class
-import 'register_page.dart'; // Import the RegisterPage class
-import 'welcome_page.dart'; // Import the WelcomePage class
+import 'user_model.dart';
+import 'cart_model.dart';
+import 'register_page.dart';
+import 'welcome_page.dart';
 
 void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => UserModel()), // Provide UserModel
-        ChangeNotifierProvider(create: (context) => CartModel()), // Provide CartModel
+        ChangeNotifierProvider(create: (context) => UserModel()),
+        ChangeNotifierProvider(create: (context) => CartModel()),
       ],
       child: MyApp(),
     ),
